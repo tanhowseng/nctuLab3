@@ -21,7 +21,9 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 To run the program, we do the following steps:
 1. Run topology 
 * Run topology in one terminal first <br />
+![picture](runtopofirst.JPG)
 * Then, run the controller in another terminal
+![picture](thencontroller.JPG)
 2. Measure the bandwidth 
 * Use the following iPerf commands to measure the bandwidth in your network
 * Leave topo.py in one terminal first
