@@ -26,8 +26,11 @@ To run the program, we do the following steps:
 ![picture](thencontroller.JPG)
 2. Measure the bandwidth 
 * Use the following iPerf commands to measure the bandwidth in your network
+![picture](iperfcommand.JPG)
 * Leave topo.py in one terminal first
+![picture](exit.JPG)
 * Then, leave SimpleController.py in another terminal
+![picture](leavecontroller.JPG)
 3.
 > * What is the meaning of the executing command (both Mininet and Ryu controller)?
 > * Show the screenshot of using iPerf command in Mininet (both `SimpleController.py` and `controller.py`)
