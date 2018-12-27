@@ -46,8 +46,22 @@ To run the program, we do the following steps:
 > * Describe how you finish this work in detail
 
 1. Environment Setup
-
+Step 1: Join this lab on GitHub Classroom
+Step 2: Login to container using SSH
+* for my case, I used Putty to access my container.
+Step 3: Clone your GitHub repository
+Step 4: Run Mininet for testing
 2. Example of Ryu SDN
+Step 1: Login to container in two terminals
+Step 2: Run Mininet topology in one terminal first
+![picture](runtopofirst.JPG)
+Step 3: Run Ryu manager with controller in anohter terminal
+![picture](thencontroller.JPG)
+Step 4: To leave the leave the Ryu controller:
+* Leave topology in one terminal first
+![picture](exit.JPG)
+* Then, leave controller in another terminal
+![picture](leavecontroller.JPG)
 
 3. Mininet Topology
 
