@@ -18,6 +18,15 @@ In this lab, we are going to write a Python program with Ryu SDN framework to bu
 
 > TODO:
 > * How to run your program?
+To run the program, we do the following steps:
+1. Run topology 
+* Run topology in one terminal first <br />
+* Then, run the controller in another terminal
+2. Measure the bandwidth 
+* Use the following iPerf commands to measure the bandwidth in your network
+* Leave topo.py in one terminal first
+* Then, leave SimpleController.py in another terminal
+3.
 > * What is the meaning of the executing command (both Mininet and Ryu controller)?
 > * Show the screenshot of using iPerf command in Mininet (both `SimpleController.py` and `controller.py`)
 ![picture](iperfresult1.JPG)
