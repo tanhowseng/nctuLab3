@@ -70,9 +70,16 @@ Step 1: Build the topology via Mininet<br />
 * Add the constraints (e.g., bandwidth, delay, and loss rate) by /Route_Configuration/src/topo/topo.png<br />
 * Topology of /Route_Configuration/src/topo/topo.png<br />
 ![picture](/src/topo/topo.png)<br />
-Step2: 
+Step 2: Run Mininet topology and controller
+* Run topo in one terminal first
+* Then, run controller in another terminal
 
 4. Ryu Controller
+Step 1: Trace the code of Ryu controller
+Step 2: Write another Ryu controller
+* Duplicate the example code SimpleController.py and name it controller.py
+* Follow the forwarding rules in the nest slides and modify controller.py
+*
 
 5. Measurement
 
