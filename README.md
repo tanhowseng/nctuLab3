@@ -69,7 +69,7 @@ Step 1: Build the topology via Mininet<br />
 > `$ cp SimpleTopo.py topo.py`<br />
 * Add the constraints (e.g., bandwidth, delay, and loss rate) by /Route_Configuration/src/topo/topo.png<br />
 * Topology of /Route_Configuration/src/topo/topo.png<br />
-![picture](topo.jpg)<br />
+![picture](/src/topo/topo.png)<br />
 Step2: 
 
 4. Ryu Controller
