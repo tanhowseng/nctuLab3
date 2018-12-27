@@ -66,9 +66,7 @@ Step 4: To leave the leave the Ryu controller: <br />
 3. Mininet Topology
 Step 1: Build the topology via Mininet<br />
 * Duplicate the example code SimpleTopo.py and name it topo.py
-`# Make sure the current directory is
-# /root/Route_Configuration/src/
-$ cp SimpleTopo.py topo.py`
+`$ cp SimpleTopo.py topo.py`
 * Add the constraints (e.g., bandwidth, delay, and loss rate) by /Route_Configuration/src/topo/topo.png
 * Topology of /Route_Configuration/src/topo/topo.png
 ![picture](topo.jpg)
