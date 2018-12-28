@@ -128,14 +128,21 @@ To define what is table-miss, we first have to define the following:<br />
    
 4. Explain the following code in `controller.py`.
     ```python
-    @set_ev_cls(ofp_event.EventOFPPacketIn, CONFIG_DISPATCHER)
+    @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
     ```
+    ![picture](qn3.jpg)
+While the above code represents a valid RYU application, it doesn't have the logic to handle network events from OpenFlow switches. Next, to allow an application to receive packets sent by the switch to the controller, the class needs to implement a method which is decorated by EvenOfPPacketIn.
+![picture](qn4.jpg)
+The first argument of the decorator calls this function everytime a packet_on message is received. The second argument indicates the switch state.
 
 5. What is the meaning of “datapath” in `controller.py`?
+
+"datapath" in `controller.py` refers to the links specified in the topology.
    
 6. Why need to set "`ip_proto=17`" in the flow entry?
    
 7. Compare the differences between the iPerf results of `SimpleController.py` and `controller.py` in detail.
+
    
 8. Which forwarding rule is better? Why?
 
