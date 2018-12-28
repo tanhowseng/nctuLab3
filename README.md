@@ -98,15 +98,15 @@ Step 2: Measure the bandwidth<br />
 > TODO:
 > * Answer the following questions
 
-1. Describe the difference between packet-in and packet-out in detail.
-To describe packet-in and packet-out in detail, we define the following terms:
-Packet: an Ethernet frame, including header and payload.
-Port: where packets enter and exit the OpenFlow pipeline. May be a physical port, a logical port defined by the switch, or a reserved port defined by the OpenFlow protocol.
-OpenFlow Pipeline: the set of linked ﬂow tables that provide matching, forwarding, and packet modiﬁcations in an OpenFlow switch. 
+1. Describe the difference between packet-in and packet-out in detail.<br />
+To describe packet-in and packet-out in detail, we define the following terms:<br />
+Packet: an Ethernet frame, including header and payload.<br />
+Port: where packets enter and exit the OpenFlow pipeline. May be a physical port, a logical port defined by the switch, or a reserved port defined by the OpenFlow protocol.<br />
+OpenFlow Pipeline: the set of linked ﬂow tables that provide matching, forwarding, and packet modiﬁcations in an OpenFlow switch. <br />
 
-Packet-in are packets that are received into the OpenFlow switch through the ingress port which are then processed by the OpenFlow pipeline which may forward them to an output port.
+> Packet-in are packets that are received into the OpenFlow switch through the ingress port which are then processed by the OpenFlow pipeline which may forward them to an output port.<br />
 
-Packet-out are packets that are sent back to the network through an output port of the OpenFlow pipeline, using the output action which defines how the packet goes back to the network.
+> Packet-out are packets that are sent back to the network through an output port of the OpenFlow pipeline, using the output action which defines how the packet goes back to the network.
 
    
 2. What is “table-miss” in SDN?
