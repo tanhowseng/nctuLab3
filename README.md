@@ -70,18 +70,28 @@ Step 1: Build the topology via Mininet<br />
 * Add the constraints (e.g., bandwidth, delay, and loss rate) by /Route_Configuration/src/topo/topo.png<br />
 * Topology of /Route_Configuration/src/topo/topo.png<br />
 ![picture](/src/topo/topo.png)<br />
-Step 2: Run Mininet topology and controller
-* Run topo in one terminal first
-* Then, run controller in another terminal
+Step 2: Run Mininet topology and controller<br />
+* Run topo in one terminal first<br />
+* Then, run controller in another terminal<br />
 
 4. Ryu Controller
-Step 1: Trace the code of Ryu controller
-Step 2: Write another Ryu controller
-* Duplicate the example code SimpleController.py and name it controller.py
-* Follow the forwarding rules in the nest slides and modify controller.py
-*
+Step 1: Trace the code of Ryu controller<br />
+Step 2: Write another Ryu controller<br />
+* Duplicate the example code SimpleController.py and name it controller.py<br />
+* Follow the forwarding rules in the picture below and modify controller.py<br />
+* Forwarding rules (for controller.py)<br />
+![picture](forwardingrules.jpg)
 
 5. Measurement
+Step 1: Run topology with SimpleController.py<br />
+* Run topo.py in one terminal first <br />
+* Then, run SimpleController.py in another terminal<br />
+Step 2: Measure the bandwidth<br />
+* Use the following iPerf commmands to measure the bandwidth in your network<br />
+![picture](iperfcommands.jpg)
+* Leave topo.py in one terminal first<br />
+* Then, leave SimpleController.py in another terminal<br />
+
 
 ### Discussion
 
@@ -89,6 +99,15 @@ Step 2: Write another Ryu controller
 > * Answer the following questions
 
 1. Describe the difference between packet-in and packet-out in detail.
+To describe packet-in and packet-out in detail, we define the following terms:
+Packet: an Ethernet frame, including header and payload.
+Port: where packets enter and exit the OpenFlow pipeline. May be a physical port, a logical port defined by the switch, or a reserved port defined by the OpenFlow protocol.
+OpenFlow Pipeline: the set of linked ﬂow tables that provide matching, forwarding, and packet modiﬁcations in an OpenFlow switch. 
+
+Packet-in are packets that are received into the OpenFlow switch through the ingress port which are then processed by the OpenFlow pipeline which may forward them to an output port.
+
+Packet-out are packets that are sent back to the network through an output port of the OpenFlow pipeline, using the output action which defines how the packet goes back to the network.
+
    
 2. What is “table-miss” in SDN?
    
