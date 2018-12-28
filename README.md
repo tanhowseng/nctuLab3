@@ -119,11 +119,11 @@ To define what is table-miss, we first have to define the following:<br />
 > When processed by a flow table, the packet is matched against the flow entries of the flow table to select a flow entry (see figure). If a packet does not match a flow entry in a flow table, this is a table miss. The behavior on a tbale miss depends on the table conifiguration (see figure). A table-miss flow entry in the flow table may specify how to process unmatched packets: Options include dropping them, passing them to another table or sending them to the controller over the control channel via packet-in messages.
    
 3. Why is "`(app_manager.RyuApp)`" adding after the declaration of class in `controller.py`?
->`from ryu.base import app_manager
+>`from ryu.base import app_manager`
 
-class L2Forwarding(app_manager.RyuApp):
-    def __init__(self, *args, **kwargs):
-        super(L2Forwarding, self).__init__(*args, **kwargs)` <br />
+>`class L2Forwarding(app_manager.RyuApp):`
+>`    def __init__(self, *args, **kwargs):`
+>`        super(L2Forwarding, self).__init__(*args, **kwargs)` <br />
 The main controller code is organised under the /ryu/ folder. The /ryu/base/ folder contains the base class for RYU applications. The RyuApp class in the app_manager.py file is inherited when creating a new application. <br />
 <br />
 By adding `(app_manager.RyuApp)` after the declaration of class in `controller.py`, a new application involving a subclass of RyuApp is created
