@@ -111,10 +111,10 @@ To describe packet-in and packet-out in detail, we define the following terms:<b
    
 2. What is “table-miss” in SDN? <br />
 To define what is table-miss, we first have to define the following:<br />
-Flow Table: A stage of the pipeline, contains flow entries.<br />
-Flow Entry: an element in a flow table used to match and prcess packets. It contains a set of match fields for matching packets, a priority for matching precedence, a set of counters to track packets, and a set of instructions to apply.<br />
-Match Field: a field against which a packet is matched, including packet headers, the ingress port, and the metadata value. A match field may be wildcarded (match any value) and in some cases bitmasked.<br />
-Metadata: a maskable register value that is used to carry information from one table to the next.<br />
+* **Flow Table**: A stage of the pipeline, contains flow entries.<br />
+* **Flow Entry**: an element in a flow table used to match and prcess packets. It contains a set of match fields for matching packets, a priority for matching precedence, a set of counters to track packets, and a set of instructions to apply.<br />
+* **Match Field**: a field against which a packet is matched, including packet headers, the ingress port, and the metadata value. A match field may be wildcarded (match any value) and in some cases bitmasked.<br />
+* **Metadata**: a maskable register value that is used to carry information from one table to the next.<br />
 
 > When processed by a flow table, the packet is matched against the flow entries of the flow table to select a flow entry (see figure). If a packet does not match a flow entry in a flow table, this is a table miss. The behavior on a tbale miss depends on the table conifiguration (see figure). A table-miss flow entry in the flow table may specify how to process unmatched packets: Options include dropping them, passing them to another table or sending them to the controller over the control channel via packet-in messages.
    
