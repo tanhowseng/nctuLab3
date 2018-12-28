@@ -124,7 +124,8 @@ To define what is table-miss, we first have to define the following:<br />
 >`class L2Forwarding(app_manager.RyuApp):`
 >`    def __init__(self, *args, **kwargs):`
 >`        super(L2Forwarding, self).__init__(*args, **kwargs)` <br />
-The main controller code is organised under the /ryu/ folder. The /ryu/base/ folder contains the base class for RYU applications. The RyuApp class in the app_manager.py file is inherited when creating a new application. <br />
+
+* The main controller code is organised under the /ryu/ folder. The /ryu/base/ folder contains the base class for RYU applications. The RyuApp class in the app_manager.py file is inherited when creating a new application. <br />
 <br />
 By adding `(app_manager.RyuApp)` after the declaration of class in `controller.py`, a new application involving a subclass of RyuApp is created
    
