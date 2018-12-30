@@ -142,7 +142,7 @@ The first argument of the decorator calls this function everytime a packet_on me
 6. Why need to set "`ip_proto=17`" in the flow entry?
    
 7. Compare the differences between the iPerf results of `SimpleController.py` and `controller.py` in detail.
-
+For `SimpleController.py`,  the link between switch s2 and s3 is not utilised for the data forwarding.
    
 8. Which forwarding rule is better? Why?
 
