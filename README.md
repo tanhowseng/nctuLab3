@@ -34,6 +34,20 @@ To run the program, we do the following steps:
 3.
 > * What is the meaning of the executing command (both Mininet and Ryu controller)?
 > * Show the screenshot of using iPerf command in Mininet (both `SimpleController.py` and `controller.py`)
+`mn --custom topo.py --topo topo --link tc --controller remote` <br />
+In addition to writing complete Mininet scripts in Python, the mn command line can also be extended using the --custom option. This allows one to use mn to invoke a custom topology, switch, host, controller or link classes. One can slo define and invoke his own system tests, and add new Mininet CLI commands. <br />
+<br />
+To add new features which can be invoked using the mn command, we pass the dict names in our --custom file.
+![picture](dictnames.jpg)
+`ryu-manager controller.py --observe-links`
+
+This command starts ryu with the specified topology file. `--observe-links` is an option of ryu-manager that turns on the topology ryu app. We should see something like this:
+![picture](qn3example1.jpg)
+If we forget to add the --observe-links option, we would see something like this:
+![picture](qn3example2.jpg)
+
+
+
 ![picture](iperfresult1.JPG)
 ![picture](iperfresult2.JPG)
 
@@ -171,6 +185,7 @@ For `SimpleController.py`,  the switch s2 is not utilised for the data forwardin
     * [Cheat Sheet of Markdown Syntax](https://www.markdownguide.org/cheat-sheet)
     * [Vim Tutorial – Tutorialspoint](https://www.tutorialspoint.com/vim/index.htm)
     * [鳥哥的 Linux 私房菜 – 第九章、vim 程式編輯器](http://linux.vbird.org/linux_basic/0310vi.php)
+    * [Other references - Topology Discovery with Ryu by castroflaviojr](https://sdn-lab.com/2014/12/31/topology-discovery-with-ryu/)
 
 ---
 ## Contributors
