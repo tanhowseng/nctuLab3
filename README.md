@@ -80,7 +80,7 @@ Step 2: Write another Ryu controller<br />
 * Duplicate the example code SimpleController.py and name it controller.py<br />
 * Follow the forwarding rules in the picture below and modify controller.py<br />
 * Forwarding rules (for controller.py)<br />
-![picture](forwardingrules.jpg)
+![picture](forwardingrules.JPG)
 
 5. Measurement
 Step 1: Run topology with SimpleController.py<br />
