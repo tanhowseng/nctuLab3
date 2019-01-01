@@ -40,13 +40,13 @@ To run the program, we do the following steps:
 In addition to writing complete Mininet scripts in Python, the mn command line can also be extended using the --custom option. This allows one to use mn to invoke a custom topology, switch, host, controller or link classes. One can slo define and invoke his own system tests, and add new Mininet CLI commands. <br />
 <br />
 To add new features which can be invoked using the mn command, we pass the dict names in our --custom file.
-![picture](dictnames.jpg)
+![picture](dictnames.JPG)
 `ryu-manager controller.py --observe-links`
 <br />
 This command starts ryu with the specified topology file. `--observe-links` is an option of ryu-manager that turns on the topology ryu app. We should see something like this:
-![picture](qn3example1.jpg)
+![picture](qn3example1.JPG)
 If we forget to add the --observe-links option, we would see something like this:
-![picture](qn3example2.jpg)
+![picture](qn3example2.JPG)
 
 
 
