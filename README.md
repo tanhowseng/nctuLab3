@@ -148,9 +148,9 @@ To define what is table-miss, we first have to define the following:<br />
     ```python
     @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
     ```
-    ![picture](qn3.JPG)
+    ![picture](qn3.JPG)<br />
 While the above code represents a valid RYU application, it doesn't have the logic to handle network events from OpenFlow switches. Next, to allow an application to receive packets sent by the switch to the controller, the class needs to implement a method which is decorated by EvenOfPPacketIn.
-![picture](qn4.JPG)
+![picture](qn4.JPG)<br />
 The first argument of the decorator calls this function everytime a packet_on message is received. The second argument indicates the switch state.
 
 5. What is the meaning of “datapath” in `controller.py`?<br />
