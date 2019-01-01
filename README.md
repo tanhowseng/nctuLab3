@@ -41,10 +41,12 @@ In addition to writing complete Mininet scripts in Python, the mn command line c
 <br />
 To add new features which can be invoked using the mn command, we pass the dict names in our --custom file.
 ![picture](dictnames.JPG)
+<br />
 `ryu-manager controller.py --observe-links`
 <br />
 This command starts ryu with the specified topology file. `--observe-links` is an option of ryu-manager that turns on the topology ryu app. We should see something like this:
 ![picture](qn3example1.JPG)
+<br />
 If we forget to add the --observe-links option, we would see something like this:
 ![picture](qn3example2.JPG)
 
