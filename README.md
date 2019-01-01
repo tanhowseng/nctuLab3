@@ -88,7 +88,7 @@ Step 1: Run topology with SimpleController.py<br />
 * Then, run SimpleController.py in another terminal<br />
 Step 2: Measure the bandwidth<br />
 * Use the following iPerf commmands to measure the bandwidth in your network<br />
-![picture](iperfcommands.jpg)
+![picture](iperfcommand.JPG)
 * Leave topo.py in one terminal first<br />
 * Then, leave SimpleController.py in another terminal<br />
 
@@ -97,7 +97,7 @@ Step 2: Measure the bandwidth<br />
 
 > TODO:
 > * Answer the following questions
-![picture](Openflow.jpg)
+![picture](Openflow.JPG)
 1. Describe the difference between packet-in and packet-out in detail.<br />
 To describe packet-in and packet-out in detail, we define the following terms:<br />
 * **Packet**: an Ethernet frame, including header and payload.<br />
@@ -130,9 +130,9 @@ To define what is table-miss, we first have to define the following:<br />
     ```python
     @set_ev_cls(ofp_event.EventOFPPacketIn, MAIN_DISPATCHER)
     ```
-    ![picture](qn3.jpg)
+    ![picture](qn3.JPG)
 While the above code represents a valid RYU application, it doesn't have the logic to handle network events from OpenFlow switches. Next, to allow an application to receive packets sent by the switch to the controller, the class needs to implement a method which is decorated by EvenOfPPacketIn.
-![picture](qn4.jpg)
+![picture](qn4.JPG)
 The first argument of the decorator calls this function everytime a packet_on message is received. The second argument indicates the switch state.
 
 5. What is the meaning of “datapath” in `controller.py`?
