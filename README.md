@@ -143,7 +143,7 @@ The first argument of the decorator calls this function everytime a packet_on me
    
 7. Compare the differences between the iPerf results of `SimpleController.py` and `controller.py` in detail.
 For `SimpleController.py`,  the switch s2 is not utilised for the data forwarding. We can tell by looking at the ports of each switch and their connections in topology and controller respectively. Since the ports of the swicthes does not change position (topo.py is consistent), the connections as specified in each controller can be depicted as follows:
-![picture](qn7.jpg)
+![picture](qn7.png)
    
 8. Which forwarding rule is better? Why?
 `controller.py` would be a better controller. This is because it utilises the bandwidths of all three switches. For `SimpleController.py` the full duplex data flow would
