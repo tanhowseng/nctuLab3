@@ -157,6 +157,7 @@ The first argument of the decorator calls this function everytime a packet_on me
 "datapath" in `controller.py` refers to the links specified in the topology.
    
 6. Why need to set "`ip_proto=17`" in the flow entry?
+`ip_proto=17` refers to UDP as the protocol field of the packet header. Flow entries are stored in the flow table of a switch and can be setup by the OpenFlow controller or by the admin manually. They are match- action pairs that dictate what action to be taken when a specific match is encountered. To match thype of protocol used for different network systems, the flow entries has to set its IP protocol. In this case, it is set to UDP.
    
 7. Compare the differences between the iPerf results of `SimpleController.py` and `controller.py` in detail. <br />
 For `SimpleController.py`,  the switch s2 is not utilised for the data forwarding. We can tell by looking at the ports of each switch and their connections in topology and controller respectively. Since the ports of the swicthes does not change position (topo.py is consistent), the connections as specified in each controller can be depicted as follows:
@@ -189,6 +190,10 @@ For `SimpleController.py`,  the switch s2 is not utilised for the data forwardin
     * [Vim Tutorial – Tutorialspoint](https://www.tutorialspoint.com/vim/index.htm)
     * [鳥哥的 Linux 私房菜 – 第九章、vim 程式編輯器](http://linux.vbird.org/linux_basic/0310vi.php)
     * [Other references - Topology Discovery with Ryu by castroflaviojr](https://sdn-lab.com/2014/12/31/topology-discovery-with-ryu/)
+    * [Other references - Wikipedia - List of Protocol numbers](https://en.wikipedia.org/wiki/List_of_IP_protocol_numbers)
+    * [Other references - Quora - what are flow entries](https://www.google.com.sg/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwjBgYSxu9HfAhUTzmEKHadYCjgQFjABegQICBAE&url=https%3A%2F%2Fwww.quora.com%2FWhat-are-flow-entries&usg=AOvVaw29ewTSEnu8B1uHdTu1yPMM)
+    
+    
 
 ---
 ## Contributors
