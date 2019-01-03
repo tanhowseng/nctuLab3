@@ -201,7 +201,7 @@ For `SimpleController.py`,  the switch s2 is not utilised for the data forwardin
 > TODO:
 > * Please replace "`YOUR_NAME`" and "`YOUR_GITHUB_LINK`" into yours
 
-* [YOUR_NAME](YOUR_GITHUB_LINK)
+* [Tan How Seng](https://github.com/nctucn/lab3-tanhowseng)
 * [David Lu](https://github.com/yungshenglu)
 
 ---
