@@ -163,7 +163,7 @@ For `SimpleController.py`,  the switch s2 is not utilised for the data forwardin
 ![picture](qn7.png)
    
 8. Which forwarding rule is better? Why?<br />
-`controller.py` would be a better controller. This is because it utilises the bandwidths of all three switches. For `SimpleController.py` the full duplex data flow would
+`controller.py` would be a better controller. This is because it utilises the bandwidths of all three switches. For `SimpleController.py` the full duplex data flow would impede the speed of dataflow if data packets are coming from both sides at the same time. Since the switches and hosts share the same limited bandwidth that is link s1-s3, `controller.py` suffers from slower data transfer speeds.
 
 ---
 ## References
